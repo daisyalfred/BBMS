@@ -1,0 +1,85 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Donor welcome page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../Designs/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../Designs/css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../Designs/style.css">
+    <script src="js/custom.js"></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<h1></h1>
+
+ <%--if(session.getAttribute("donorId")!=null)
+                  {
+                	  out.println(" Hello "+(String)session.getAttribute("donorId"));
+                	  //session.removeAttribute("message");
+                  }
+                  else
+                  {
+                	  response.sendRedirect("../authentication/donor_logout.jsp");
+                  }
+                  --%>
+
+
+<%@ include file="../includes/menu.jsp" %>
+<table><tr>
+<form action="admin_view_donor.jsp" method="post">
+<input type="submit" value="Requested Donors">
+</form>&nbsp;&nbsp;&nbsp;&nbsp;
+<form action="admin_view_receiver.jsp" method="post">
+<input type="submit" value="Requested Receivers">
+</form>&nbsp;&nbsp;&nbsp;&nbsp;
+<form action="admin_accept_view_all.jsp" method="post">
+<input type="submit" value="Blood Donors">
+</form>&nbsp;&nbsp;&nbsp;&nbsp;
+<form action="admin_release_view_all.jsp" method="post">
+<input type="submit" value="Blood Receiver">
+</form>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+</tr></table>
+
+
+</body>
+<%@ include file="../Designs/footer.jsp" %>
+</html>
+
+</body>
+</html>
